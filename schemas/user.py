@@ -4,7 +4,7 @@ from models.enums import UserRole
 # TODO: Add more validation using pydantic
 
 class UserBase(BaseModel):
-    username:str|None
+    username:str
     first_name:str
     last_name:str
     phone:str
