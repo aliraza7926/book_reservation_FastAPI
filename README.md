@@ -1,7 +1,7 @@
 
 # Book Reservation FastAPI
 
-This is a Test projct that use
+This is a Test project that use
 
 [FastAPI](https://fastapi.tiangolo.com/),
 [SQLAlchemy](https://www.sqlalchemy.org/),
@@ -11,9 +11,9 @@ for a book reservation service
 
 ## Installation
 
-In this project i use [uv](https://docs.astral.sh/uv/) as a package manager.
+In this project, I use [uv](https://docs.astral.sh/uv/) as a package manager.
 
-for installing the requirements you can use this command
+To install the requirements you can use this command
 ```bash
   uv sync
 ```
@@ -23,16 +23,16 @@ or you could use pip for installing requirements from
   requirements.txt
 ```
 
-To run this project you must first create a postgres database
+To run this project you must first create a Postgres database
 
-and put the connction info in the 
+and put the connection info in the 
 
 ```bash
   .env
 ```
 there is a .env.example that you can use
 
-after that you must go to the database directory and use alemib to initialize your database
+after that, you must go to the database directory and use alembic to initialize your database
 you can use this command
 
 ```bash
@@ -40,21 +40,21 @@ you can use this command
   uv run alembic upgrade head
 ```
 
-after this you could simply go to the root of the project and start the fast api server
+after this, you could simply go to the root of the project and start the FastAPI server
 
 ```bash
   cd ..
   uv run fastapi dev main.py 
 ```
 
-## What work and What doesn't
+## What works and What doesn't
 
-the only thing that work in this project is creating a user :(
+the only thing that works in this project is creating a customer :(
 
 
 ## ToDo
 - [ ]  complete the project
-- [ ]  dockerize the projct
+- [ ]  dockerize the project
 
 
 Create a make file for this thing
